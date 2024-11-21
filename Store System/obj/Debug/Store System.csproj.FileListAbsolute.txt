@@ -1,0 +1,7 @@
+C:\Users\Pedri\OneDrive\Área de Trabalho\Cotmig\PC\Trabalho - 2\Store System\Store System\bin\Debug\Store System.exe.config
+C:\Users\Pedri\OneDrive\Área de Trabalho\Cotmig\PC\Trabalho - 2\Store System\Store System\bin\Debug\Store System.exe
+C:\Users\Pedri\OneDrive\Área de Trabalho\Cotmig\PC\Trabalho - 2\Store System\Store System\bin\Debug\Store System.pdb
+C:\Users\Pedri\OneDrive\Área de Trabalho\Cotmig\PC\Trabalho - 2\Store System\Store System\obj\Debug\Store System.csproj.AssemblyReference.cache
+C:\Users\Pedri\OneDrive\Área de Trabalho\Cotmig\PC\Trabalho - 2\Store System\Store System\obj\Debug\Store System.csproj.CoreCompileInputs.cache
+C:\Users\Pedri\OneDrive\Área de Trabalho\Cotmig\PC\Trabalho - 2\Store System\Store System\obj\Debug\Store System.exe
+C:\Users\Pedri\OneDrive\Área de Trabalho\Cotmig\PC\Trabalho - 2\Store System\Store System\obj\Debug\Store System.pdb

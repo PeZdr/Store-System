@@ -11,6 +11,7 @@ namespace Store_System
     {
         static string[,] Products = new string[100, 4];
         static string[,] Sellings = new string[100, 3];
+        static string[,] SellingsReport = new string[100, 3];
         static int count = 0;
         static int countSell = 0;
         static void Main(string[] args)
@@ -37,6 +38,7 @@ namespace Store_System
                         Sell(Products, Sellings);
                         break;
                     case 3:
+                        PrintSellingReport(Sellings, SellingsReport, Products);
                         break;
                     case 4:
                         break;
@@ -105,6 +107,46 @@ namespace Store_System
                 Console.WriteLine();
             }
         }
+        static void PrintSellingReport(string[,] selling, string[,] sellingReport, string[,] products)
+        {
+            for (int l = 0; l < 100; l++)
+            {
+                if (selling[l,0] == null)
+                {
+                    break;
+                }
+                for (int c = 0; c < 3; c++)
+                {
+                    if (c == 2)
+                    {
+                        sellingReport[l,c] = (Convert.ToDouble(products[l, c]) * Convert.ToDouble(selling[l,c])).ToString();
+                    }
+                    else
+                    {
+                        sellingReport[l,c] = selling[l,c];
+                    }
+                }
+            }
+
+            for (int l = 0; l < 100; l++)
+            {
+                for (int c = 0; c < 3; c++)
+                {
+                    Console.Write($"{sellingReport[l, c]}\t");
+                }
+                Console.WriteLine();
+            }
+            double total = 0.0;
+            for (int l = 0; l < 100; l++)
+            {
+                total += Convert.ToDouble(sellingReport[l, 2]);
+            }
+            Console.WriteLine($"Total: {total}");
+            Console.ReadKey();
+            Console.Clear();
+
+
+        }
         static bool ExistCode(string[,] matrix, int code)
         {
             for (int l = 0; l < 100; l++)
@@ -160,5 +202,6 @@ namespace Store_System
             }
             
         }
+        
     }
 }
